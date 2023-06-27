@@ -1,0 +1,118 @@
+:root {
+    --main-bg-color;#ffffff;
+    --primary-btn: #4685ff;
+    --secondary-bg-color:#f2f2f2;
+    --accent-color: #ffb084;
+    --main-text: #000000;
+}
+
+
+body {
+    /* background-color: var(--main-bg-color); */
+    /* color: var(--main-text); */
+    /* display: flex; */
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1500px;
+}
+
+h1 {
+    color: var(--main-text);
+    size: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    font-weight: 1000;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--primary-btn);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.input_container {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    background-color: var(--main-bg-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    /* border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    display: inline-block; */
+    order: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    opacity: 70%;
+}
+
+input.button {
+    color: white;
+}
+
+input:hover {
+    opacity: 80%;
+    background-color: var(--secondary-bg-color);
+}
+
+input.button:hover{
+    opacity: 90%;
+    background-color: var(--accent-color);
+}
+
+input:active {
+    opacity: 100%;
+}
+
+.button.submit {
+    background-color: var(--primary-btn);
+
+}
+
+.tasklist_submit {
+    overflow: auto;
+    width: 50%;
+}
+
+.tasklist_container {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    background-color: var(--secondary-bg-color);
+    border-radius: 8px;
+    display: block;
+    padding: 1rem;
+    text-align: left;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+li {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5em;
+}
+
+.deleteBtn {
+    position: relative;
+    right: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+}
